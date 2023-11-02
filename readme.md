@@ -1,1 +1,1 @@
-This file contais Array,Anonymous,IIFE concept programs.
+This file contains Array,Anonymous,IIFE concept program.
