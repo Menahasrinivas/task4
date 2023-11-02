@@ -1,6 +1,6 @@
 
-//1.Do the below programs in anonymous function & IIFE
-//1.Print odd numbers in an array
+// //1.Do the below programs in anonymous function & IIFE
+// //1.Print odd numbers in an array
 //print oddnumbers using  anonymous function
 
 var odd = function (num){
@@ -18,7 +18,7 @@ var num = [1,2,3,4,5];
 odd(num);
 
 
-//print odd num using IIFE
+// //print odd num using IIFE
 
 var num1 = [1,2,3,4,5];
    var final1 = [];
@@ -45,12 +45,12 @@ console.log(odd1);
 
 
 
-//-----------------------------------------------------------------------------------------------
+// //-----------------------------------------------------------------------------------------------
 
 
-//2.Convert all the strings to title caps in a string array
-// to title case using  anonymous function
-let title = function (str) {
+// //2.Convert all the strings to title caps in a string array
+// // to title case using  anonymous function
+var title = function (str) {
 	
 	for (var i = 0; i < str.length; i++) {
         str[i] = str[i].toLowerCase();
@@ -74,8 +74,8 @@ var str1 = ['i','aM','a','software','EngiNeer.'];
 })(str1);
 
 
- //Convert all the strings to title caps in a string array
- //Using arrow function
+//  //Convert all the strings to title caps in a string array
+//  //Using arrow function
 
  var str2 = ["India", "is", "My", "Native", "Country"];
 
@@ -88,13 +88,13 @@ console.log( strCaps.join(' '));
 
 
 
-//------------------------------------------------------------------------------------------
+// //------------------------------------------------------------------------------------------
 
 
 
 
-// //3.Sum of all numbers in an array
-// //sum of numbers using  anonymous function
+// // //3.Sum of all numbers in an array
+// // //sum of numbers using  anonymous function
 
 var add = function (n){
     let sum = 0;
@@ -108,7 +108,7 @@ var n= [1,2,3,4,5];
 add(n);
 
 
-//sum of numbers using IIFE
+// //sum of numbers using IIFE
 var n= [1,2,3,4,5];
 (function (){
     var sum = 0;
@@ -121,18 +121,18 @@ var n= [1,2,3,4,5];
 
 //sum of numbers using arrow function
 
-const arr=[1,2,3,4,5,6];
-const add1=arr.reduce((a,b)=>a+b);
+const arr1=[1,2,3,4,5,6];
+const add1=arr1.reduce((a,b)=>a+b);
 console.log([add1]);
 
 
 
-// //--------------------------------------------------------------------------------------------------
+// // //--------------------------------------------------------------------------------------------------
 
 
 
-// //4.Return all the prime numbers in an array
-// //1. Using Anonymous fucntion.
+// // //4.Return all the prime numbers in an array
+// // //1. Using Anonymous fucntion.
 
 var prime=function(a){
 
@@ -158,7 +158,7 @@ prime([1,2,3,4,5,6,7,8,9,11]);
 
 
 
-//Using IIFE
+// //Using IIFE
 
 (function(a1){
     var  res1=[];
@@ -184,7 +184,7 @@ prime([1,2,3,4,5,6,7,8,9,11]);
 
 
 
-// //using arrow function
+// // //using arrow function
 
 var prime1 = (arr) => {
     return arr.filter((n) => {
@@ -199,11 +199,11 @@ var prime1 = (arr) => {
   console.log(prime1([1,2,3,4,5,6,7,8,9,10]));
   
 
-// //------------------------------------------------------------------------------------------
+// // //------------------------------------------------------------------------------------------
 
 
-// //5.Return all the palindromes in an array
-// //anonymous function
+// // //5.Return all the palindromes in an array
+// // //anonymous function
 
 var palindrome = function(arr){
     
@@ -223,7 +223,7 @@ var arr =["abc", "mom", "dad", "madam", "teacher"];
 palindrome(arr);
 
 
-// //IIFE function
+// // //IIFE function
 
  
 (function(){
@@ -258,10 +258,10 @@ console.log(arr);
 
 
 
-// //-----------------------------------------------------------------------------------------------------
+// // //-----------------------------------------------------------------------------------------------------
 
 
-// //6.Return median of two sorted arrays of the same size.
+// // //6.Return median of two sorted arrays of the same size.
 // //anonymous function
 var median = function (arr1,arr2){
     var arr = [...arr1, ...arr2];
@@ -282,41 +282,41 @@ var median = function (arr1,arr2){
 }
 console.log(final);
 };
-var arr1 = [3,2,1,4,5];
-var arr2 = [8,6,7,9,10];
-median(arr1,arr2);
+var arrr = [3,2,1,4,5];
+var arrr = [8,6,7,9,10];
+median(arrr,arrr);
 
 
-// //Return median of two sorted array using IIFE
+// // //Return median of two sorted array using IIFE
 
-var arr1 = [3,2,1,4,5];
-var arr2 = [8,6,7,9,10];
+var arr11 = [3,2,1,4,5];
+var arr12 = [8,6,7,9,10];
 (function (){
    
-var arr = [...arr1, ...arr2];
+var array = [...arr11, ...arr12];
     
-    arr.sort((a,b) => a-b);
-    var len = arr.length;
+    array.sort((a,b) => a-b);
+    var len = array.length;
   
     if(len%2!==0){
 
- var ans = arr[Math.round(len/2)-1];
+ var ans = array[Math.round(len/2)-1];
  var final = ans;
 
  }else{
 
- ans = arr[Math.round(len/2)-1]+arr[Math.round(len/2)];
+ ans = array[Math.round(len/2)-1]+array[Math.round(len/2)];
  final = ans;
  }
  console.log(final);
-})(arr1,arr2);
+})(arr11,arr12);
 
 
-// //----------------------------------------------------------------------------------------------------
+// // //----------------------------------------------------------------------------------------------------
 
 
-// //7.Remove duplicates from an array
-// //Using anonymous function
+// // //7.Remove duplicates from an array
+// // //Using anonymous function
 
 var dup=function(arr){
     var frequency = {};
@@ -342,7 +342,7 @@ var dup=function(arr){
    dup([1,12,11,3,4,5,12]);
    
    
-//    //Using IIFE
+// //    //Using IIFE
    
    (function (arr){
      var frequency = {};
@@ -368,46 +368,13 @@ var dup=function(arr){
    
 
 
-// //---------------------------------------------------------------------------------------------------------
+// // //---------------------------------------------------------------------------------------------------------
 
 
-//    //8.Rotate an array by k times
-// //Using anonymous function
-const rotation = function (arr,n,d)
-{
-    const p = 1;
-        while (p <= k) {
-            let last = arr[0];
-            for (const i = 0; i < n - 1; i++) {
-                arr[i] = arr[i + 1];
-            }
-            arr[n - 1] = last;
-            p++;
-            
-        }
-         const out = [];
-        for (const i = 0; i < n; i++) {
-           out.push(arr[i]);
-            
-        }
-        console.log(out);
-};
-const arr =[4,5,6,1,2,3];
-const n = arr.length;
-const k = 3;
-
-rotation(arr, n,k);
-
-
-
-// //Using IIFE
-
-var arr =[4,5,6,1,2,3];
-var n = arr.length;
-var k = 3;
-
-(function(arr,n,k){
-   var p = 1;
+// //    //8.Rotate an array by k times
+// // //Using anonymous function
+var rot = function (arr,n,k){
+    var p = 1;
         while (p <= k) {
             var last = arr[0];
             for (var i = 0; i < n - 1; i++) {
@@ -419,9 +386,40 @@ var k = 3;
         }
          var out = [];
         for (var i = 0; i < n; i++) {
-            out.push(arr[i]);
+           out.push(arr[i]);
+            
+        }
+        console.log(out);
+};
+var arr =[4,5,6,1,2,3];
+var n = arr.length;
+var k = 3;
+
+rot(arr, n,k);
+
+
+// // //Using IIFE
+
+var arr1 =[4,5,6,1,2,3];
+var n1 = arr.length;
+var k1 = 3;
+
+(function(arr1,n1,k1){
+   var p = 1;
+        while (p <= k1) {
+            var last = arr1[0];
+            for (var i = 0; i < n - 1;i++) {
+                arr1[i] = arr1[i + 1];
+            }
+            arr1[n - 1] = last;
+            p++;
+            
+        }
+         var out = [];
+        for (var i = 0; i < n; i++) {
+            out.push(arr1[i]);
             
         }
         console.log(out);  
-})(arr,n,k);
+})(arr1,n1,k1);
 
