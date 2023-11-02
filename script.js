@@ -121,9 +121,9 @@ var n= [1,2,3,4,5];
 
 //sum of numbers using arrow function
 
-const arr1=[1,2,3,4,5,6];
-const add1=arr1.reduce((a,b)=>a+b);
-console.log([add1]);
+const sm=[1,2,3,4,5,6];
+const add1=sm.reduce((a,b)=>a+b);
+console.log([sm]);
 
 
 
